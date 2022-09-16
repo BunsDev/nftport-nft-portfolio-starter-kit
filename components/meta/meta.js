@@ -5,8 +5,8 @@ export default function Meta() {
         <>
         <Head>
             <title>NFTPort | NFT Portfolio Starter Kit</title>
-            <meta name="description" content="NFTPort API starter kit using Next.js, Tailwind and Vercel."/>
-            <meta name="viewport" content="width=device-width,maximum-scale=1"/>
+            <meta name="description" content="NFTPort API starter kit using Next.js, Tailwind and Vercel." />
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />  
             <link rel="icon" href="/favicon.ico" />
             <meta property="og:title" content="NFTPort | NFT Portfolio Starter Kit" />
             <meta property="og:type" content="article" />

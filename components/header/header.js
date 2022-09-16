@@ -1,7 +1,7 @@
 export default function Header() {
 
     return (
-        <header className="bg-slate-50 lg:fixed lg:inset-y-0 lg:left-0 lg:flex lg:w-[28rem] lg:items-start lg:overflow-y-auto xl:w-[30rem]">
+        <header className="w-screen bg-slate-50 lg:fixed lg:inset-y-0 lg:left-0 lg:flex lg:w-[28rem] lg:items-start lg:overflow-y-auto xl:w-[30rem]">
             <div className="hidden lg:sticky lg:top-0 lg:flex lg:w-16 lg:flex-none lg:items-center lg:whitespace-nowrap lg:py-12 lg:text-sm lg:leading-7 lg:[writing-mode:vertical-rl]">
                 <span className="font-mono text-slate-500">
                     Created by
