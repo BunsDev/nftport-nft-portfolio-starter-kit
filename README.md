@@ -20,22 +20,21 @@ To successfully deploy to Vercel, you will need the following environment variab
 
 | Variable        | Description           | Example  |
 | ------------- |-------------| -------------|
-| NEXT_PUBLIC_SITE_NAME      | Your website's SEO Name | NFTPort |
-| NEXT_PUBLIC_SITE_TITLE      | Your website's SEO Title      |   NFT Portfolio Starter Kit |
-| NEXT_PUBLIC_SITE_DESCRIPTION      | Your website's SEO Description      |   NFTPort API starter kit using Next.js, Tailwind and Vercel. |
 | NEXT_PUBLIC_NFTPORT_API_KEY      | Your NFTPort API Key      |   4806f51a-f91f-456d-8cb6-b471b909c2b6 |
 | NEXT_PUBLIC_NFTPORT_CONTRACT_ADDRESS      | A public address to retrieve contract NFTs      |   0x6C9343CA5c2Ef3a35a83438344Bb3cbE3c249f65 |
 | NEXT_PUBLIC_NFTPORT_CHAIN     | The blockchain we will retreive NFTs from      |   ethereum |
 | NEXT_PUBLIC_NFTPORT_DISPLAY_QUANTITY     | The number of NFTs to retreive      |   50 |
 | NEXT_PUBLIC_NFTPORT_INCLUDE     | The type of data to return from NFTPort's API      |   `all`, but others include: `default`, `metadata`, and `Not Set` |
-| NEXT_PUBLIC_CREATOR_NAME     | The creator of the NFT or NFT's project      |   Yuga Labs |
-| NEXT_PUBLIC_CREATOR_WEBSITE     | The NFT or NFT's creator website     |   yuga.com |
-| NEXT_PUBLIC_CREATOR_PROJECT_NAME     | The NFT or NFT's project name     |   Bored Ape Yacht Club |
-| NEXT_PUBLIC_CREATOR_PROJECT_TAGLINE     | The NFT or NFT's project tagline     |   A collection of 10000 unique Bored Ape NFTs |
-| NEXT_PUBLIC_CREATOR_PROJECT_BIO     | The NFT or NFT's bio or long description     |   Bored Ape Yacht Club is a collection of 10,000 Bored Ape NFTs—unique digital collectibles living on the Ethereum blockchain. Your Bored Ape doubles as your Yacht Club membership card, and grants access to members-only benefits. Future areas and perks can be unlocked by the community through roadmap activation. |
-| NEXT_PUBLIC_CREATOR_LEARN_MORE_LINK     | An external link to learn more about the NFT or NFT's project     |   https://opensea.io/collection/boredapeyachtclub |
-| NEXT_PUBLIC_CREATOR_INSTAGRAM_LINK     | The NFT or NFT's Instagram profile     |   https://www.instagram.com/boredapeyachtclub/ |
-| NEXT_PUBLIC_CREATOR_TWITTER_LINK     | The NFT or NFT's Twitter profile     |   https://twitter.com/BoredApeYC |
+
+## Updating Content
+
+### Logo
+
+To update the logo, replace the `logo.png` file found within the repositories `/public` directory.
+
+### Project Information
+
+To update information such as as the landing page's project title (ex. `Bored Ape Yacht Club`), update the `retreive.js` file within the `components/nfts` directory.
 
 ## Roadmap
 

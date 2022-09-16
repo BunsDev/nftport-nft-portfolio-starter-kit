@@ -1,16 +1,14 @@
 import Head from 'next/head'
 
 export default function Meta() {
-    const siteName = process.env.NEXT_PUBLIC_SITE_NAME
-    const siteTitle = process.env.NEXT_PUBLIC_SITE_TITLE
-    const siteDescription = process.env.NEXT_PUBLIC_SITE_DESCRIPTION
-
     return (
         <>
         <Head>
-            <title>{siteName} | {siteTitle}</title>
-            <meta name="description" content={`${siteDescription}`} />
+            <title>NFTPort | NFT Portfolio Starter Kit</title>
+            <meta name="description" content="NFTPort API starter kit using Next.js, Tailwind and Vercel."/>
+            <meta name="viewport" content="width=device-width,maximum-scale=1"/>
             <link rel="icon" href="/favicon.ico" />
+            <meta property="og:url" content="http://www.imdb.com/title/tt0117500/"/>
         </Head>
         </>
     )
