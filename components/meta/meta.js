@@ -11,10 +11,10 @@ export default function Meta() {
             <meta property="og:title" content="NFTPort | NFT Portfolio Starter Kit" />
             <meta property="og:type" content="article" />
             <meta property="og:url" content="https://bored-apes-nft-landing-page-xrdg.vercel.app/" />
-            <meta property="og:image" content="https://bored-apes-nft-landing-page-xrdg.vercel.app/og.jpg" />
+            <meta property="og:image" content="https://nftport-portfolio-bored-apes-starter-kit.vercel.app/og.jpg" />
             <meta name="twitter:title" content="NFTPort | NFT Portfolio Starter Kit" />
             <meta name="twitter:description" content="NFTPort API starter kit using Next.js, Tailwind and Vercel." />
-            <meta name="twitter:image" content="https://bored-apes-nft-landing-page-xrdg.vercel.app/og.jpg" />
+            <meta name="twitter:image" content="https://nftport-portfolio-bored-apes-starter-kit.vercel.app/og.jpg" />
             <meta name="twitter:card" content="summary_large_image"></meta>
         </Head>
         </>
