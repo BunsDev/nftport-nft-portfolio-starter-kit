@@ -1,5 +1,7 @@
 # NFTPort NFT Portfolio Starter Kit
 
+<img src="public/og.jpg">
+
 This is a starter kit project for creating an NFT portfolio using [NFTPort](https://www.nftport.xyz/), Next.js's [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), and [Tailwind](https://tailwindui.com/); additionally, it is deployable on [Vercel](https://vercel.com/).
 
 ## Getting Started
@@ -13,6 +15,8 @@ This is a starter kit project for creating an NFT portfolio using [NFTPort](http
 7. View your landing page on `localhost:3000`
 
 Alternatively, you can deploy this starter kit using Vercel's [Deploy Now](https://vercel.com/docs/deploy-button) button:
+
+<a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsurgieboi%2Fnftport-nft-portfolio-starter-kit&env=NEXT_PUBLIC_NFTPORT_API_KEY,NEXT_PUBLIC_NFTPORT_CONTRACT_ADDRESS,NEXT_PUBLIC_NFTPORT_CHAIN,NEXT_PUBLIC_NFTPORT_DISPLAY_QUANTITY"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
 
 Note, deploying to Vercel does not require any knowledge of Javascript, Next.js or software development.
 
