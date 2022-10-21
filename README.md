@@ -26,7 +26,7 @@ To successfully deploy to Vercel, you will need the following environment variab
 | ------------- |-------------| -------------|
 | NEXT_PUBLIC_NFTPORT_API_KEY      | Your NFTPort API Key      |   4806f51a-f91f-456d-8cb6-b471b909c2b6 |
 | NEXT_PUBLIC_NFTPORT_CONTRACT_ADDRESS      | A public address to retrieve contract NFTs      |   0x6C9343CA5c2Ef3a35a83438344Bb3cbE3c249f65 |
-| NEXT_PUBLIC_NFTPORT_CHAIN     | The blockchain we will retreive NFTs from      |   ethereum |
+| NEXT_PUBLIC_NFTPORT_CHAIN     | The blockchain we will retreive NFTs from      |   `ethereum`, but others include: `goerli`, `polygon`, `rinkeby`, and `solana` |
 | NEXT_PUBLIC_NFTPORT_DISPLAY_QUANTITY     | The number of NFTs to retreive      |   50 |
 | NEXT_PUBLIC_NFTPORT_INCLUDE     | The type of data to return from NFTPort's API      |   `all`, but others include: `default`, `metadata`, and `Not Set` |
 
@@ -50,7 +50,7 @@ This repository is just a starter kit, but I will be expanding it to include:
 
 ## Contributing
 
-Fire away and feel free to contribute!
+Feel free to fork, submit pull requests and contribute.
 
 ## Questions
 
