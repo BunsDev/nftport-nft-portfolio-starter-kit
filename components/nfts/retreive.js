@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 
 const RetreiveNFTS = () => {
     const apiKey = process.env.NEXT_PUBLIC_NFTPORT_API_KEY
-    const contractAddress = process.env.NEXT_PUBLIC_NFTPORT_CONTRACT_ADDRESS
+    const nftsAddress = process.env.NEXT_PUBLIC_NFTPORT_NFTS_ADDRESS
     const nftChain = process.env.NEXT_PUBLIC_NFTPORT_CHAIN
     const nftQuantity = process.env.NEXT_PUBLIC_NFTPORT_DISPLAY_QUANTITY
     const nftInclude = process.env.NEXT_PUBLIC_NFTPORT_INCLUDE
@@ -20,14 +20,14 @@ const RetreiveNFTS = () => {
         setLoading(true)
 
         if (nftChain === "solana") {
-            fetch(`https://api.nftport.xyz/v0/solana/nfts/${contractAddress}?chain=${nftChain}&page_size=${nftQuantity}&include=${nftInclude}`, options)
+            fetch(`https://api.nftport.xyz/v0/solana/accounts/creators/${nftsAddress}?chain=${nftChain}&page_size=${nftQuantity}&include=${nftInclude}`, options)
             .then((res) => res.json())
             .then((data) => {
                 setData(data);
                 setLoading(false);
             });
         } else {
-            fetch(`https://api.nftport.xyz/v0/nfts/${contractAddress}?chain=${nftChain}&page_size=${nftQuantity}&include=${nftInclude}`, options)
+            fetch(`https://api.nftport.xyz/v0/nfts/${nftsAddress}?chain=${nftChain}&page_size=${nftQuantity}&include=${nftInclude}`, options)
             .then((res) => res.json())
             .then((data) => {
                 setData(data);

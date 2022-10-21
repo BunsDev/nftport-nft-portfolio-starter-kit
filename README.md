@@ -16,7 +16,7 @@ This is a starter kit project for creating an NFT portfolio using [NFTPort](http
 
 Alternatively, you can deploy this starter kit using Vercel's [Deploy Now](https://vercel.com/docs/deploy-button) button:
 
-<a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsurgieboi%2Fnftport-nft-portfolio-starter-kit&env=NEXT_PUBLIC_NFTPORT_API_KEY,NEXT_PUBLIC_NFTPORT_CONTRACT_ADDRESS,NEXT_PUBLIC_NFTPORT_CHAIN,NEXT_PUBLIC_NFTPORT_DISPLAY_QUANTITY,NEXT_PUBLIC_NFTPORT_INCLUDE"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
+<a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsurgieboi%2Fnftport-nft-portfolio-starter-kit&env=NEXT_PUBLIC_NFTPORT_API_KEY,NEXT_PUBLIC_NFTPORT_NFTS_ADDRESS,NEXT_PUBLIC_NFTPORT_CHAIN,NEXT_PUBLIC_NFTPORT_DISPLAY_QUANTITY,NEXT_PUBLIC_NFTPORT_INCLUDE"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
 
 Note, deploying to Vercel does not require any knowledge of Javascript, Next.js or software development.
 
@@ -25,10 +25,19 @@ To successfully deploy to Vercel, you will need the following environment variab
 | Variable        | Description           | Example  |
 | ------------- |-------------| -------------|
 | NEXT_PUBLIC_NFTPORT_API_KEY      | Your NFTPort API Key      |   4806f51a-f91f-456d-8cb6-b471b909c2b6 |
-| NEXT_PUBLIC_NFTPORT_CONTRACT_ADDRESS      | A public address to retrieve contract NFTs      |   0x6C9343CA5c2Ef3a35a83438344Bb3cbE3c249f65 |
+| NEXT_PUBLIC_NFTPORT_NFTS_ADDRESS      | A public address to retrieve contract NFTs      |   0x6C9343CA5c2Ef3a35a83438344Bb3cbE3c249f65 |
 | NEXT_PUBLIC_NFTPORT_CHAIN     | The blockchain we will retreive NFTs from      |   `ethereum`, but others include: `goerli`, `polygon`, `rinkeby`, and `solana` |
 | NEXT_PUBLIC_NFTPORT_DISPLAY_QUANTITY     | The number of NFTs to retreive      |   50 |
 | NEXT_PUBLIC_NFTPORT_INCLUDE     | The type of data to return from NFTPort's API      |   `all`, but others include: `default`, `metadata`, and `Not Set` |
+
+## Environment Variables
+
+### Solana
+
+This starter kit connects to Solana and displays NFT's created by a specific account using NFTPort's [Retrieve Solana NFTs created by an account
+](https://docs.nftport.xyz/docs/nftport/b3A6Njg1NTI0MDQ-retrieve-solana-nf-ts-created-by-an-account) endpoint. 
+
+In doing so, ensure that your `NEXT_PUBLIC_NFTPORT_INCLUDE` environment variable uses one of the following values: `default` or `metadata`. Using `all`, or any other value, will return a `422` error due to an invalid enumeration. 
 
 ## Updating Content
 
