@@ -26,13 +26,13 @@ const RetreiveNFTS = () => {
             });
     }, []);
 
-    if (isLoading) return <p className='p-8 text-2xl text-center font-bold'>Loading NFTs...</p>;
-    if (!data) return <p className='p-8 text-2xl text-center font-bold'>No availble NFTs</p>;
+    if (isLoading) return <p className='p-8 text-2xl text-center font-medium'>Loading NFTs...</p>;
+    if (!data) return <p className='p-8 text-2xl text-center font-medium'>No availble NFTs</p>;
 
     return (
         <>
             <div className='pt-6 px-3 md:px-6'>
-                <h1 className='text-2xl font-bold leading-7 text-slate-900'>
+                <h1 className='text-2xl font-medium leading-7 text-slate-900'>
                     Available NFTs
                 </h1>
             </div>

@@ -44,8 +44,9 @@ To update information such as as the landing page's project title (ex. `Bored Ap
 
 This repository is just a starter kit, but I will be expanding it to include:
 
-- [ ] Implement Web3 wallet connections (ex. [web3.js](https://web3js.readthedocs.io/en/v1.8.0/))
-- [ ] Allow connected wallet holders to create NFT project profiles
+- [ ] Add [Wagmi](https://wagmi.sh/) and the ability to connect Web3 wallets
+- [ ] Enable connected wallets to create portfolio pages
+- [ ] Who really knows (wink, wink)
 
 ## Contributing
 
