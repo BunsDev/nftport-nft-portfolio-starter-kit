@@ -50,7 +50,7 @@ This repository is just a starter kit, but I will be expanding it to include:
 
 ## Contributing
 
-Feel free to fork this repository and submit pull requests, or build an application of your own. 
+Fire away and feel free to contribute!
 
 ## Questions
 
