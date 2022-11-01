@@ -49,10 +49,10 @@ const RetreiveNFTS = () => {
             <div className='divide-y pt-6 divide-slate-100 sm:mt-4 lg:mt-8 lg:border-t lg:border-slate-100'>
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:px-6 auto-cols-auto'>
                     {data.nfts.map(nft =>
-                        <div className='border-solid border-2 border-slate-200 rounded-lg drop-shadow-xl bg-gradient-to-r from-slate-50 via-gray-50 to-zinc-50' key={nft.token_id}>
-                            <img className='rounded-t-lg hover:grayscale' src={nft.metadata?.image} alt={nft.metadata?.name}></img>
+                        <div key={nftChain === "solana" ? nft.mint_address : nft.token_id} className='border-solid border-2 border-slate-200 rounded-lg drop-shadow-xl bg-gradient-to-r from-slate-50 via-gray-50 to-zinc-50'>
+                            <img className='rounded-t-lg hover:grayscale' src={nft.metadata.image} alt={nft.metadata.name}></img>
                             <div className='p-4 divide-y divide-slate-200'>
-                                <h3 className='font-bold text-xl pb-2'>{nft.metadata?.name}</h3>
+                                <h3 className='font-bold text-xl pb-2'>{nft.metadata.name}</h3>
                                 <div className='flex py-2'>
                                     <p className='basis-1/2 text-base font-bold'>Chain:</p>
                                     {nftChain === "solana" ? (
