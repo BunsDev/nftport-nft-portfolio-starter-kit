@@ -37,7 +37,7 @@ To successfully deploy to Vercel, you will need the following environment variab
 This starter kit connects to Solana and displays NFT's created by a specific account using NFTPort's [Retrieve Solana NFTs created by an account
 ](https://docs.nftport.xyz/docs/nftport/b3A6Njg1NTI0MDQ-retrieve-solana-nf-ts-created-by-an-account) endpoint. 
 
-In doing so, ensure that your `NEXT_PUBLIC_NFTPORT_INCLUDE` environment variable uses one of the following values: `default` or `metadata`. Using `all`, or any other value, will return a `422` error due to an invalid enumeration. 
+In doing so, ensure that your `NEXT_PUBLIC_NFTPORT_INCLUDE` environment variable uses `metadata`. Using `all` or `default`, or any other value, will return eitehr a `422` error due to an invalid enumeration or insufficient data.
 
 ## Updating Content
 
